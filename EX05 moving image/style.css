@@ -1,3 +1,11 @@
-#pp:hover{
-    background-color: brown;
+#pp:hover ~ #immg{
+    left: 0px;
+}
+
+#immg{
+    height: 150px;
+    position: relative;
+    left: -210px;
+    transition: left 1s;
+
 }
