@@ -1,0 +1,132 @@
+#menu {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+header {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+body{
+    background-color: black;
+}
+
+footer{
+    background-color: antiquewhite;
+    text-align: center;
+    clear: both;
+}
+
+#content{
+    width: 85%;
+    float: left;
+}
+#nav-bar{
+    width: 14%;
+    background-color: antiquewhite;
+    min-height: 880px;
+    float: left;
+    margin-right: 1%;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+th{
+    background-color: coral;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.table-div{
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: antiquewhite;
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+th,td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td{
+    text-align: left;
+}
+
+td + td{
+    text-align: center;
+}
+
+.dot {
+    margin-right: 10px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.brown{
+    background-color: brown;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.green{
+    background-color: green;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.pink{
+    background-color: palevioletred;
+}
+
+.black{
+    background-color: black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.dot-span{
+    border-bottom: 20px;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: rgb(168, 168, 168); /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+  border-radius: 0 20px 20px 0;
+}
+
+.html {width: 1%; } /* Green */
+.css {width: 100%; border-radius: 0;} /* Blue */
+.js {width: 75%;} /* Red */
+.php {width: 1%;} /* Dark Grey */
+.kpjp{width: 1%;}
+.ind{width: 1%;}
