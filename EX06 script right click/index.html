@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="230119">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>230119</title>  
+</head>
+<body>
+    <div id="divv" oncontextmenu="rclick()" onclick="lclick()">Find out which mouse button was clicked</div>
+</body>
+<script>
+    function rclick(){
+        alert("Right click");
+        event.preventDefault();
+    }
+    function lclick(){
+        alert("Left click");
+    }
+</script>
