@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>050219</title>
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <form action="" id="form">
             <div class="row">
                 <div class="col-25">
-                        <label for="name">Name:</label>
+                    <label for="name">Name:</label>
                 </div>
                 <div class="col-75">
                     <input type="text" name="name" id="name">
@@ -22,22 +23,22 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                        <label for="rollno">Roll no.:</label>
+                    <label for="rollno">Roll no.:</label>
                 </div>
                 <div class="col-75">
-                        <input type="text" name="rollno" id="rollno">
+                    <input type="text" name="rollno" id="rollno">
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                        <label for="sub">Subject:</label>
+                    <label for="sub">Subject:</label>
                 </div>
                 <div class="col-75">
-                        <select name="sub" id="sub" multiple>
-                                <option value="Webtech">Webtech</option>
-                                <option value="IOT">IOT</option>
-                                <option value="Software Engineering">Software Engineering</option>
-                            </select>
+                    <select name="sub" id="sub" multiple>
+                        <option value="Webtech">Webtech</option>
+                        <option value="IOT">IOT</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                    </select>
                 </div>
             </div>
             <div class="row">
@@ -45,16 +46,24 @@
                     <label for="year">Year:</label>
                 </div>
                 <div class="col-75">
-                        <input type="radio" name="year" value="First Year">First Year
-                        <input type="radio" name="year" value="Second Year">Second Year
-                        <input type="radio" name="year" value="Third Year">Third Year
+                    <input type="radio" name="year" value="First Year">First Year
+                    <input type="radio" name="year" value="Second Year">Second Year
+                    <input type="radio" name="year" value="Third Year">Third Year
                 </div>
             </div>
             <div class="row">
-                    <input type="submit" value="submit">
+                <input type="submit" value="Submit" onclick="showInput(event); ">
             </div>
         </form>
     </div>
+    <table id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Subject</th>
+            <th>Year</th>
+        </tr>
+    </table>
 </body>
 
 </html>
