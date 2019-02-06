@@ -1,10 +1,21 @@
+
+var myWindow = null;
 function showInput(event) {
     event.preventDefault();
     let elements = document.getElementById("form").elements;
-    var table = document.getElementById("myTable");
-    var row = table.insertRow();
+   // var table = document.getElementById("myTable");
+   // var row = table.insertRow();
+   
     var cell;
     var i,j,k;
+
+
+   if(myWindow == null || myWindow.closed){
+        myWindow = window.open("./table.html","Results","height=960px,width=940px");
+    }
+
+    var table = myWindow.document.getElementById("myTable");
+    var row = table.insertRow();
 
 
     for(i=0; i<elements.length; i++){
