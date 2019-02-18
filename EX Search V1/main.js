@@ -9,8 +9,4 @@ function searchWords(event) {
     if(found.length > 0){
         para.innerHTML = inputText.substr(0,pos) + "<span class='highlight'>" + found + "</span>" + inputText.substr(pos+length,para.length);
     }
-    
-    
-
-
 }
