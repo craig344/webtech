@@ -5,8 +5,7 @@ function searchWords(event) {
     var sValue = document.getElementById("searchw").value;
     var length = sValue.length;
     var pos = inputText.search(sValue);
-    var found = inputText.slice(pos,pos+length);
-    if(found.length > 0){
-        para.innerHTML = inputText.substr(0,pos) + "<span class='highlight'>" + found + "</span>" + inputText.substr(pos+length,para.length);
+    if(pos != -1){
+        para.innerHTML = inputText.substr(0,pos) + "<span class='highlight'>" + sValue + "</span>" + inputText.substr(pos+length,inputText.length);
     }
 }
