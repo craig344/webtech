@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>v2</title>
+    <title>v3</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 
     <script>
         var data=document.getElementById("data").innerHTML.toString();
-            console.log("data->"+data);
+           // console.log("data->"+data);
 
         function search(){
 
@@ -45,7 +45,26 @@
         function findMatch(searchString){
             var newData="";
             var replica=data;
-            do {
+            var found;
+            var pattern =new RegExp(searchString,"g");
+
+            console.log("pattern:"+pattern);
+
+           // var found=replica.match(pattern);
+           // console.log("found:"+found);
+           console.log("pattern len:"+searchString.length);
+
+           while((found=pattern.exec(replica)) != null){
+            console.log("found:"+found[0]+"next match start at"+pattern.lastIndex);
+            var start = replica.slice(0, (pattern.lastIndex - searchString.length));
+            console.log("start:" + start + ".");
+           }
+           
+
+            //var len=found.length;
+            //console.log("len:"+len);
+
+          /*  do {
                 var position = replica.search(searchString);
                 console.log("position:" + position);
 
@@ -71,9 +90,13 @@
             
                 }
             }while(position != -1);
+            */
+         //   document.getElementById("data").innerHTML = newData+end;
 
-            document.getElementById("data").innerHTML = newData+end;
-       
+
+        /*    var new_text=data.replace(result, "<span class='highlight'>"+searchString+"</span>");
+            document.getElementById("data").innerHTML=new_text;
+        */
          /*   var pattern =new RegExp("("+searchString+")","gi");
             var new_text=data.replace(pattern, "<span class='highlight'>"+searchString+"</span>");
 
