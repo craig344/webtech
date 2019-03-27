@@ -11,7 +11,7 @@
         xmlDoc = new ActiveXObject("Msxml2.DOMDocument.3.0");
         xmlDoc.async = false;
         xmlDoc.validateOnParse = true;
-        xmlDoc.load("election.xmlDoc");
+        xmlDoc.load("election.xml");
         document.write("<br/>code: "+ xmlDoc.parseError.errorCode);
         document.write("<br/>reason: "+xmlDoc.parseError.reason);
         document.write("<br/>line: "+ xmlDoc.parseError.line);

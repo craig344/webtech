@@ -5,15 +5,15 @@
   <parties>
     <party pid = "p1">
         <party_name>Congress</party_name>
-        <party_sumbol>Hand</party_sumbol>
+        <party_symbol>Hand</party_symbol>
     </party>
     <party pid = "p2">
         <party_name>BJP</party_name>
-        <party_sumbol>lotus</party_sumbol>
+        <party_symbol>lotus</party_symbol>
     </party>
     <party pid = "p3">
         <party_name>Aam Aadmi Party</party_name>
-        <party_sumbol>broom</party_sumbol>
+        <party_symbol>broom</party_symbol>
     </party>
   </parties>
   <candidates>
@@ -54,4 +54,5 @@
         <party_data pid = "p2" cid = "c2" votes = "150"/>
         <party_data pid = "p3" cid = "c3" votes = "250"/>
     </constituency_data>
+    </performance>
 </election>

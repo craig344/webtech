@@ -1,1 +1,30 @@
-<!ELEMENT election (parties, candidates, constituencies performance)>
+<!ELEMENT election (parties, candidates, constituencies, performance)>
+
+<!ELEMENT parties (party+)>
+<!ELEMENT party (party_name, party_symbol)>
+<!ATTLIST party pid ID #REQUIRED>
+<!ELEMENT party_name (#PCDATA)>
+<!ELEMENT party_symbol (#PCDATA)>
+
+<!ELEMENT candidates (candidate+)>
+<!ELEMENT candidate (candidate_name, candidate_age)>
+<!ATTLIST candidate cid ID #REQUIRED>
+<!ELEMENT candidate_name (#PCDATA)>
+<!ELEMENT candidate_age (#PCDATA)>
+
+<!ELEMENT constituencies (constituency+)>
+<!ELEMENT constituency (constituency_name, count)>
+<!ATTLIST constituency coid ID #REQUIRED>
+<!ELEMENT constituency_name (#PCDATA)>
+<!ELEMENT count (#PCDATA)>
+
+<!ELEMENT performance (constituency_data+)>
+<!ELEMENT constituency_data (party_data+)>
+<!ATTLIST constituency_data coid IDREF #REQUIRED>
+<!ELEMENT party_data EMPTY>
+<!ATTLIST party_data 
+pid IDREF #REQUIRED
+cid IDREF #REQUIRED
+votes CDATA #REQUIRED>
+
+
