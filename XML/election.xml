@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE election SYSTEM "election.dtd">
+<election>
+  <parties>
+    <party pid = "p1">
+        <party_name>Congress</party_name>
+        <party_sumbol>Hand</party_sumbol>
+    </party>
+    <party pid = "p2">
+        <party_name>BJP</party_name>
+        <party_sumbol>lotus</party_sumbol>
+    </party>
+    <party pid = "p3">
+        <party_name>Aam Aadmi Party</party_name>
+        <party_sumbol>broom</party_sumbol>
+    </party>
+  </parties>
+  <candidates>
+    <candidate cid="c1">
+        <candidate_name>Craig</candidate_name>
+        <candidate_age>24</candidate_age>
+    </candidate>
+    <candidate cid="c2">
+        <candidate_name>Harshad</candidate_name>
+        <candidate_age>29</candidate_age>
+    </candidate>
+    <candidate cid="c3">
+        <candidate_name>Digvijay</candidate_name>
+        <candidate_age>21</candidate_age>
+    </candidate>
+    <candidate cid="c4">
+        <candidate_name>Jeff</candidate_name>
+        <candidate_age>22</candidate_age>
+    </candidate>
+  </candidates>
+  <constituencies>
+    <constituency coid = "co1">
+        <constituency_name>Salcete</constituency_name>
+        <count>500</count>
+    </constituency>
+    <constituency coid = "co2">
+        <constituency_name>Bardez</constituency_name>
+        <count>500</count>
+    </constituency>
+    <constituency coid = "co3">
+        <constituency_name>Pernem</constituency_name>
+        <count>500</count>
+    </constituency>
+  </constituencies>
+  <performance>
+    <constituency_data coid = "co1">
+        <party_data pid = "p1" cid = "c1" votes = "100"/>
+        <party_data pid = "p2" cid = "c2" votes = "150"/>
+        <party_data pid = "p3" cid = "c3" votes = "250"/>
+    </constituency_data>
+</election>

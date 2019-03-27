@@ -1,0 +1,1 @@
+<!ELEMENT election (parties, candidates, constituencies performance)>
